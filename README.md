@@ -1,7 +1,4 @@
-##Consider a motor control task where the objective is to maintain a constant
-motor speed. The inputs to the fuzzy logic controller are the error between the
-desired speed and the actual speed of the motor, and the derivative of the error.
-The output of the controller is the control signal (current) applied to the motor.
+## Consider a motor control task where the objective is to maintain a constant motor speed. The inputs to the fuzzy logic controller are the error between the desired speed and the actual speed of the motor, and the derivative of the error. The output of the controller is the control signal (current) applied to the motor.
 
 Fuzzy Logic Controller Design
 Inputs:
