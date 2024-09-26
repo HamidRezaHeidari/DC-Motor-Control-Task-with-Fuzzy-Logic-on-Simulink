@@ -1,0 +1,52 @@
+[System]
+Name='custom_conttroller'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=1
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='e_w'
+Range=[-1 1]
+NumMFs=5
+MF1='NB':'trapmf',[-1 -1 -0.5 -0.2]
+MF2='NS':'trimf',[-0.4 -0.2 -0]
+MF3='Z':'trimf',[-0.01 0 0.01]
+MF4='PS':'trimf',[0 0.2 0.4]
+MF5='PB':'trapmf',[0.2 0.5 1 1]
+
+
+[Input2]
+Name='e_dw'
+Range=[-1 1]
+NumMFs=2
+MF2='N':'trimf',[-1 -1 0]
+MF1='P':'trimf',[0 1 1]
+
+
+
+[Output1]
+Name='v'
+Range=[-30 30]
+NumMFs=5
+MF1='NB':'trimf',[-30 -25 -20]
+MF2='NS':'trimf',[-15 -10 -5]
+MF3='Z':'trimf',[-0.1 0 0.1]
+MF4='PS':'trimf',[5 10 15]
+MF5='PB':'trimf',[20 25 30]
+
+
+[Rules]
+1 0, 1 (1) : 1
+2 0, 2 (1) : 1
+3 0, 3 (1) : 1
+4 0, 4 (1) : 1
+5 0, 5 (1) : 1
+3 1, 2 (1) : 1
+3 2, 4 (1) : 1
