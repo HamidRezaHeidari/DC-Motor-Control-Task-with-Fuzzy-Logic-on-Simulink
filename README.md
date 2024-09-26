@@ -12,7 +12,8 @@ Inputs:
 Outputs:
   <br />
 • Control Signal: Negative Big (NB), Negative Small (NS), Zero (Z), Positive Small (PS), Positive Big (PB)
-
+  <br />
+# star if you like it ✨
 <p align="center">
   <img title="Fig1" height="410" src="images/1.png">
   <br />
